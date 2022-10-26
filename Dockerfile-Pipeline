@@ -2,7 +2,7 @@ FROM node:14-alpine as Build
 WORKDIR /app
 ENV PATH=/app/node_modules/.bin:$PATH
 COPY package*.json /app/
-CMD npm install
+RUN npm install
 
 FROM node:14-alpine as Test
 WORKDIR /app
