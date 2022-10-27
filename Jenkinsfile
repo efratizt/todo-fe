@@ -37,6 +37,5 @@ pipeline {
                 sh 'docker push efrat2020/todo-fe:latest'
             }
         }
-     
     }
 }
