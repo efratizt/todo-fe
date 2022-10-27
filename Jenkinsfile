@@ -33,7 +33,7 @@ pipeline {
         stage('Push') {
             steps {
                 echo "Push-stage"
-                sh 'docker login -u efrat2020 -p efrat2020'
+                sh 'docker login -u [my_user_name] -p [my_password]'
                 sh 'docker push efrat2020/todo-fe:latest'
             }
         }
